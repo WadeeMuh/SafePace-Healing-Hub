@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafePace Healing Hub</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main_style.css">
+</head>
+<body>
+
+  <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+  <div class="side-nav" id="sideNav">
+    <a href="about.html" class="nav-link">About</a>
+    <a href="organizations.html" class="nav-link">Organizations</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <div class="lang-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://i.postimg.cc/NKB7DtwL/IMG-0323-(1).jpg" width="100" height="100" alt="SafePace Healing Hub Logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="organizations.html" class="nav-link">Organizations</a>
+      <a href="activities.html" class="nav-link">Activities</a>
+    </div>
+    <div class="lang-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+    <button class="nav-toggle" onclick="openNav()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header>
+    <h1>SafePace Healing Hub</h1>
+    <p class="subtitle">You are not alone. We are here to support you on your healing journey!</p>
+
+    <div class="good-news-container">
+      <div class="good-news-text">
+        <h2>Good News:</h2>
+        <p>We are excited to announce the launch of our new website, SafePace Healing Hub! Our mission is to provide a safe and supportive space for individuals who have experienced trauma, abuse, or any form of harm. We understand that healing is a journey, and we are here to walk alongside you every step of the way.</p>
+      </div>
+      <div class="good-news-image">
+        <img src="https://glomoderndental.com/wp-content/uploads/2021/05/why-smiles-are-important-for-kids.jpg" width="200" height="150" alt="Why Smiles Are Important for Kids">
+        <img src="https://www.cdc.gov/children-mental-health/media/images/2024/09/NCIPC_CMH_PTS_v1a.png" width="200" height="150" alt="Children's Mental Health">
+        <img src="https://i.pinimg.com/564x/65/67/1c/65671ceb5f1d2a1e32bf7195518a28ea.jpg" width="200" height="150" alt="Healing Journey">
+      </div>
+    </div>
+  </header>
+
+  <section id="help">
+    <h2 class="section-title">How We Can Help You:</h2>
+    <p>We understand that everyone's healing journey is unique, and we are committed to providing personalized support to meet your individual needs. Qualified professionals are here to listen, guide, and empower you throughout your recovery process.</p>
+  </section>
+
+  <section id="learn">
+    <h2 class="section-title">Learn More About Healing:</h2>
+    <p>Healing is a complex and multifaceted process that can involve physical, emotional, and psychological aspects. It is important to understand that healing is not linear and may involve setbacks and challenges along the way. However, with the right support and resources, it is possible to overcome trauma and find hope for a brighter future.</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us:</h2>
+    <p>If you are in need of support or have any questions about our services, please do not hesitate to reach out to us. We are here to help and support you on your healing journey.</p>
+    <p>Email: info@safepacehealinghub.org┃Phone: (123) 456-7890</p>
+  </section>
+
+  <script>
+    function openNav() {
+      document.getElementById('sideNav').classList.add('open');
+      document.getElementById('navOverlay').classList.add('open');
+    }
+    function closeNav() {
+      document.getElementById('sideNav').classList.remove('open');
+      document.getElementById('navOverlay').classList.remove('open');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities - SafePace Healing Hub</title>
+  <link rel="stylesheet" href="activities_style.css">
+</head>
+<body>
+
+  <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+  <div class="side-nav" id="sideNav">
+    <a href="about.html" class="nav-link">About</a>
+    <a href="organizations.html" class="nav-link">Organizations</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <div class="lang-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://i.postimg.cc/NKB7DtwL/IMG-0323-(1).jpg" alt="SafePace Healing Hub Logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="organizations.html" class="nav-link">Organizations</a>
+      <a href="activities.html" class="nav-link">Activities</a>
+    </div>
+    <div class="lang-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+    <button class="nav-toggle" onclick="openNav()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header>
+    <h1>Activities</h1>
+    <p class="subtitle">Simple tools to help you breathe, reset, and feel a little more like yourself.</p>
+  </header>
+
+  <main>
+
+    <section class="breathing-section">
+      <h2 class="section-title">Breathing Exercises</h2>
+
+      <div class="breathing-carousel">
+        <button class="carousel-arrow" id="prevBtn" aria-label="Previous exercise">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="breathing-stage">
+          <div class="gif-frame">
+            <img id="breathingGif" src="images/breathing/exercise1.gif" alt="Breathing exercise animation">
+          </div>
+          <div class="exercise-dots" id="exerciseDots"></div>
+        </div>
+
+        <button class="carousel-arrow" id="nextBtn" aria-label="Next exercise">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="task-section">
+      <h2 class="section-title">Random Daily Task Generator</h2>
+
+      <div class="task-card" id="taskCard">
+        <div class="task-text" id="taskText">Press the button to get your task for today</div>
+      </div>
+
+      <button class="generate-btn" onclick="generateTask()">Generate My Task</button>
+    </section>
+
+  </main>
+
+  <script src="activities_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizations</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="organizations_style.css">
+</head>
+<body>
+
+  <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+  <div class="side-nav" id="sideNav">
+    <a href="about.html" class="nav-link">About</a>
+    <a href="organizations.html" class="nav-link">Organizations</a>
+    <a href="activities.html" class="nav-link">Activities</a>
+    <div class="lang-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://i.postimg.cc/NKB7DtwL/IMG-0323-(1).jpg" alt="SafePace Healing Hub Logo">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="organizations.html" class="nav-link">Organizations</a>
+      <a href="activities.html" class="nav-link">Activities</a>
+    </div>
+    <div class="lang-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+    <button class="nav-toggle" onclick="openNav()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header>
+    <h1>Organizations</h1>
+    <p class="subtitle">These organizations are here to help. You don't have to face this alone.</p>
+  </header>
+
+  <main>
+    <div class="split-grid">
+
+      <div class="column sudan">
+        <h2 class="column-title">Sudan</h2>
+
+        <div class="org-card">
+          <img src="images/sudan_logos/sudan1.png" class="org-logo-circle" alt="International Trauma Center">
+          <a href="https://internationaltraumacenter.com/where-we-work/south-sudan/" target="_blank" class="org-name">International Trauma Center</a>
+        </div>
+
+        <div class="org-card">
+          <img src="images/sudan_logos/sudan2.png" class="org-logo-circle" alt="The UN Refugee Agency">
+          <a href="https://www.unhcr.org/" target="_blank" class="org-name">The UN Refugee Agency</a>
+        </div>
+
+        <div class="org-card">
+          <img src="images/sudan_logos/sudan3.png" class="org-logo-circle" alt="International Medical Corps">
+          <a href="https://internationalmedicalcorps.org/country/sudan/" target="_blank" class="org-name">International Medical Corps</a>
+        </div>
+
+        <div class="org-card">
+          <img src="images/sudan_logos/sudan4.png" class="org-logo-circle" alt="International Rescue Committee">
+          <a href="https://www.rescue.org/article/crisis-sudan-what-happening-and-how-help" target="_blank" class="org-name">International Rescue Committee</a>
+        </div>
+
+        <div class="org-card">
+          <img src="images/sudan_logos/sudan5.png" class="org-logo-circle" alt="Doctors Without Borders">
+          <a href="https://www.doctorswithoutborders.org/" target="_blank" class="org-name">Doctors Without Borders</a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="column palestine">
+        <h2 class="column-title">Palestine</h2>
+
+        <div class="org-card">
+          <img src="images/palestine_logos/palestine1.png" class="org-logo-circle" alt="Healing For Gaza">
+          <a href="https://healingforgaza.org/#about-us" target="_blank" class="org-name">Healing For Gaza</a>
+        </div>
+
+        <div class="org-card">
+          <img src="images/palestine_logos/palestine2.png" class="org-logo-circle" alt="Heal Palestine">
+          <a href="https://www.healpalestine.org/" target="_blank" class="org-name">Heal Palestine</a>
+        </div>
+
+        <div class="org-card">
+          <img src="images/palestine_logos/palestine3.png" class="org-logo-circle" alt="Ruh Care">
+          <a href="https://www.ruhcare.com/palestine" target="_blank" class="org-name">Ruh Care</a>
+        </div>
+
+        <div class="org-card">
+          <img src="images/palestine_logos/palestine4.png" class="org-logo-circle" alt="Pocket Project">
+          <a href="https://pocketproject.org/palestinian-trauma-relief-project/" target="_blank" class="org-name">Pocket Project</a>
+        </div>
+
+        <div class="org-card">
+          <img src="images/palestine_logos/palestine5.png" class="org-logo-circle" alt="Pacific Center">
+          <a href="https://www.pacificcenter.org/antigenocidestatement" target="_blank" class="org-name">Pacific Center</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function openNav() {
+      document.getElementById('sideNav').classList.add('open');
+      document.getElementById('navOverlay').classList.add('open');
+    }
+    function closeNav() {
+      document.getElementById('sideNav').classList.remove('open');
+      document.getElementById('navOverlay').classList.remove('open');
+    }
+  </script>
+
+</body>
+</html>
