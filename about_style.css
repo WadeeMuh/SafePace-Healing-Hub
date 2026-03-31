@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Source Serif 4', Georgia, serif;
-  background: #70e29c;
+  background: #ff6964;
   color: #1a1a1a;
 }
 
@@ -22,8 +22,8 @@ nav {
   align-items: center;
   gap: 0 32px;
   padding: 18px 32px;
-  border-bottom: 1.5px solid #1a1a1a;
-  background: #70e29c;
+  border-bottom: 4px solid #1a1a1a;
+  background: #499243;
   position: relative;
 }
 
@@ -118,7 +118,7 @@ section {
   font-family: 'Playfair Display', serif;
   font-size: 1.05rem;
   font-weight: 700;
-  color: #c21906;
+  color: #ffffff;
   margin-top: 22px;
   margin-bottom: 8px;
 }
@@ -187,7 +187,7 @@ section {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: #c0392b;
+  background: #0d7100;
   flex-shrink: 0;
   margin-top: 6px;
 }
@@ -234,7 +234,7 @@ section {
   left: -260px;
   width: 240px;
   height: 100%;
-  background: #70e29c;
+  background: #499243;
   border-right: 1.5px solid #1a1a1a;
   display: flex;
   flex-direction: column;
